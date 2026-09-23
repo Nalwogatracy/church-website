@@ -1,0 +1,3 @@
+# Place video files (.mp4, .webm) in this directory.
+# Example: public/videos/baptism.mp4
+# Refer to them in the app or admin portal as: /videos/baptism.mp4

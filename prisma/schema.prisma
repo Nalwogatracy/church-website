@@ -1,0 +1,139 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model AdminUser {
+  id           String   @id @default(uuid())
+  name         String
+  email        String   @unique
+  passwordHash String
+  role         String   @default("ADMIN")
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Event {
+  id          String   @id @default(uuid())
+  title       String
+  description String
+  eventDate   DateTime
+  startTime   String
+  endTime     String
+  location    String
+  category    String   @default("Service")
+  imageUrl    String?
+  featured    Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Sermon {
+  id          String   @id @default(uuid())
+  title       String
+  speaker     String
+  series      String?
+  scripture   String?
+  sermonDate  DateTime
+  videoUrl    String?
+  audioUrl    String?
+  description String
+  imageUrl    String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Ministry {
+  id          String   @id @default(uuid())
+  name        String
+  slug        String   @unique
+  description String
+  leaderName  String
+  meetingTime String
+  imageUrl    String?
+  icon        String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Announcement {
+  id          String   @id @default(uuid())
+  title       String
+  content     String
+  category    String   @default("General")
+  publishedAt DateTime @default(now())
+  important   Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Pastor {
+  id        String   @id @default(uuid())
+  name      String
+  title     String
+  bio       String
+  imageUrl  String?
+  email     String?
+  order     Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model GalleryItem {
+  id        String   @id @default(uuid())
+  title     String
+  category  String   @default("Worship")
+  imageUrl  String
+  createdAt DateTime @default(now())
+}
+
+model PrayerRequest {
+  id        String   @id @default(uuid())
+  name      String
+  email     String?
+  request   String
+  isPublic  Boolean  @default(false)
+  status    String   @default("PENDING")
+  createdAt DateTime @default(now())
+}
+
+model ContactMessage {
+  id        String   @id @default(uuid())
+  name      String
+  email     String
+  phone     String?
+  subject   String
+  message   String
+  status    String   @default("UNREAD")
+  createdAt DateTime @default(now())
+}
+
+model Donation {
+  id        String   @id @default(uuid())
+  donorName String
+  email     String
+  amount    Float
+  currency  String   @default("UGX")
+  fund      String   @default("General Tithes")
+  frequency String   @default("ONE_TIME")
+  createdAt DateTime @default(now())
+}
+
+model Sponsor {
+  id               String   @id @default(uuid())
+  name             String
+  organization     String?
+  email            String
+  phone            String?
+  projectChoice    String
+  contributionType String   @default("FINANCIAL")
+  amountEstimate   Float?
+  currency         String   @default("UGX")
+  message          String?
+  status           String   @default("PENDING")
+  createdAt        DateTime @default(now())
+}

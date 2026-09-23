@@ -1,0 +1,234 @@
+{
+  "users": [
+    {
+      "id": "admin-1",
+      "name": "Senior Pastor & Administrator",
+      "email": "admin@christformedchurch.org",
+      "passwordHash": "$2a$10$w0.0b0M7pS...placeholder...$2a$10$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQ0y5w0nO9M4o.N0i9zW6",
+      "role": "ADMIN",
+      "createdAt": "2026-09-23T08:00:00.000Z"
+    }
+  ],
+  "events": [
+    {
+      "id": "evt-1",
+      "title": "Sunday Celebration & Worship Service",
+      "description": "Join us every Sunday morning for an uplifting worship experience, transformative biblical message by Pastor Duncan Kirya, and warm fellowship.",
+      "eventDate": "2026-09-27",
+      "startTime": "09:00 AM",
+      "endTime": "12:00 PM",
+      "location": "Main Sanctuary, Kibiri (near Munyonyo), Kampala",
+      "category": "Worship Service",
+      "imageUrl": "https://images.unsplash.com/photo-1438232992991-995b7058bbb3?auto=format&fit=crop&w=1200&q=80",
+      "featured": true,
+      "createdAt": "2026-09-23T08:00:00.000Z"
+    },
+    {
+      "id": "evt-2",
+      "title": "Midweek Prayer & Teaching Altar",
+      "description": "A dedicated gathering of intercessory prayer, worship, and practical biblical teaching for spiritual growth.",
+      "eventDate": "2026-09-30",
+      "startTime": "05:00 PM",
+      "endTime": "07:00 PM",
+      "location": "Kibiri Sanctuary",
+      "category": "Prayer & Bible Study",
+      "imageUrl": "https://images.unsplash.com/photo-1510936111840-65e151ad71bb?auto=format&fit=crop&w=1200&q=80",
+      "featured": true,
+      "createdAt": "2026-09-23T08:00:00.000Z"
+    },
+    {
+      "id": "evt-3",
+      "title": "Christ Formed Foundation Community Outreach",
+      "description": "Providing food packages, practical encouragement, and social assistance to older community members and single mothers.",
+      "eventDate": "2026-10-03",
+      "startTime": "10:00 AM",
+      "endTime": "02:00 PM",
+      "location": "Kibiri Community Grounds",
+      "category": "Foundation Outreach",
+      "imageUrl": "https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=1200&q=80",
+      "featured": true,
+      "createdAt": "2026-09-23T08:00:00.000Z"
+    }
+  ],
+  "sermons": [
+    {
+      "id": "sermon-1790170918785",
+      "title": "PRAISE AND WORSHIP MOMENT",
+      "speaker": "Pastor Valence",
+      "series": "Christ Formed Worship",
+      "scripture": "John 4:23–24",
+      "sermonDate": "2026-09-23",
+      "videoUrl": "/uploads/1790170749749-worship-altar.mp4",
+      "audioUrl": "",
+      "description": "John 4:23–24 (KJV)\n“But the hour cometh, and now is, when the true worshippers shall worship the Father in spirit and in truth: for the Father seeketh such to worship him.\nGod is a Spirit: and they that worship him must worship him in spirit and in truth.”",
+      "imageUrl": "/uploads/1790170909287-large-group-fans-with-arms-raised-having-fun-music-concert-night.jpg",
+      "createdAt": "2026-09-23T13:41:58.785Z"
+    },
+    {
+      "id": "sermon-1790170097280",
+      "title": "BAPTISM",
+      "speaker": "Pastor Duncan Kirya",
+      "series": "Christ Formed Worship",
+      "scripture": "Galatians 4:19",
+      "sermonDate": "2026-09-23",
+      "videoUrl": "/uploads/1790170528564-Baptism.mp4",
+      "audioUrl": "",
+      "description": "“Go ye therefore, and teach all nations, baptizing them in the name of the Father, and of the Son, and of the Holy Ghost.”\n— Matthew 28:19 (KJV)",
+      "imageUrl": "/uploads/1790169905891-baptismimage.jpg",
+      "createdAt": "2026-09-23T13:28:17.280Z"
+    },
+    {
+      "id": "sermon-1",
+      "title": "Formed in Christ: Walking in Vision & Faith",
+      "speaker": "Pastor Duncan Kirya",
+      "series": "Transformed into His Image",
+      "scripture": "Galatians 4:19",
+      "sermonDate": "2026-09-20",
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "audioUrl": "",
+      "description": "Founder Pastor Duncan Kirya shares how yielding our lives to Christ forms His divine character, purpose, and restoration within us.",
+      "imageUrl": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80",
+      "createdAt": "2026-09-23T08:00:00.000Z"
+    },
+    {
+      "id": "sermon-2",
+      "title": "Unwavering Trust in Seasons of Growth",
+      "speaker": "Pastor Valence",
+      "series": "Faithful Foundations",
+      "scripture": "Hebrews 11:1-6",
+      "sermonDate": "2026-09-13",
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "audioUrl": "",
+      "description": "Assistant Pastor Valence encourages believers to stay steadfast in faith, reflecting on how God leads small beginnings into abundant blessings.",
+      "imageUrl": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+      "createdAt": "2026-09-23T08:00:00.000Z"
+    }
+  ],
+  "ministries": [
+    {
+      "id": "min-foundation",
+      "name": "Christ Formed Foundation",
+      "slug": "christ-formed-foundation",
+      "description": "Our community-support initiative dedicated to helping older people and single mothers facing financial, social, and practical challenges with love, care, and practical support.",
+      "leaderName": "Miss Flavia & Mrs. Christine Kirya",
+      "meetingTime": "Weekly Outreach & Support Visits",
+      "imageUrl": "https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=1200&q=80",
+      "icon": "HeartHandshake",
+      "createdAt": "2026-09-23T08:00:00.000Z"
+    },
+    {
+      "id": "min-1",
+      "name": "Worship & Altar Fellowship",
+      "slug": "worship-ministry",
+      "description": "Leading the church into deep spiritual encounters, prayer, and acoustic & vocal worship.",
+      "leaderName": "Pastor Valence",
+      "meetingTime": "Sundays & Midweek Service",
+      "imageUrl": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
+      "icon": "Music",
+      "createdAt": "2026-09-23T08:00:00.000Z"
+    },
+    {
+      "id": "min-2",
+      "name": "Discipleship & Teaching Ministry",
+      "slug": "discipleship-ministry",
+      "description": "Equipping believers through in-depth scripture study, prayer training, and practical Christian living.",
+      "leaderName": "Pastor Duncan Kirya",
+      "meetingTime": "Wednesdays at 5:00 PM",
+      "imageUrl": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80",
+      "icon": "BookOpen",
+      "createdAt": "2026-09-23T08:00:00.000Z"
+    }
+  ],
+  "announcements": [
+    {
+      "id": "ann-1",
+      "title": "Christ Formed Foundation Support Drive",
+      "content": "We invite all members and partners to join hands with the Christ Formed Foundation as we prepare gift packages and assistance for older people and single mothers in Kibiri.",
+      "category": "Foundation News",
+      "publishedAt": "2026-09-21",
+      "important": true,
+      "createdAt": "2026-09-23T08:00:00.000Z"
+    },
+    {
+      "id": "ann-2",
+      "title": "Welcome to Our Sanctuary in Kibiri, near Munyonyo",
+      "content": "Join us this Sunday as we gather to seek God, receive spiritual encouragement, and experience healing and restoration in Christ.",
+      "category": "Church News",
+      "publishedAt": "2026-09-18",
+      "important": false,
+      "createdAt": "2026-09-23T08:00:00.000Z"
+    }
+  ],
+  "pastors": [
+    {
+      "id": "pastor-1",
+      "name": "Pastor Duncan Kirya",
+      "title": "Founder & Pastor",
+      "bio": "Founder of Christ Formed Church International. Birthed the ministry on 23rd March 2019 following a vision to reach and serve God's people with faith, love, and spiritual restoration.",
+      "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
+      "email": "pastorduncan@christformedchurch.org",
+      "order": 1,
+      "createdAt": "2026-09-23T08:00:00.000Z"
+    },
+    {
+      "id": "pastor-2",
+      "name": "Pastor Valence",
+      "title": "Assistant Pastor",
+      "bio": "Serves alongside Pastor Duncan in spiritual shepherding, preaching, prayer ministry, and guiding believers into mature faith.",
+      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80",
+      "email": "pastorvalence@christformedchurch.org",
+      "order": 2,
+      "createdAt": "2026-09-23T08:00:00.000Z"
+    },
+    {
+      "id": "pastor-3",
+      "name": "Miss Flavia",
+      "title": "Administrator",
+      "bio": "Oversees church operations, foundation initiatives, and administrative coordination, ensuring seamless ministry service to the community.",
+      "imageUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80",
+      "email": "flavia@christformedchurch.org",
+      "order": 3,
+      "createdAt": "2026-09-23T08:00:00.000Z"
+    },
+    {
+      "id": "pastor-4",
+      "name": "Mrs. Christine Kirya",
+      "title": "Assistant",
+      "bio": "Supports pastoral shepherding, hospitality, and women's fellowship, passionate about building strong Christian families and serving vulnerable members.",
+      "imageUrl": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80",
+      "email": "christine@christformedchurch.org",
+      "order": 4,
+      "createdAt": "2026-09-23T08:00:00.000Z"
+    }
+  ],
+  "gallery": [
+    {
+      "id": "gal-1",
+      "title": "Sunday Celebration in Kibiri",
+      "category": "Worship",
+      "imageUrl": "https://images.unsplash.com/photo-1438232992991-995b7058bbb3?auto=format&fit=crop&w=800&q=80",
+      "createdAt": "2026-09-23T08:00:00.000Z"
+    },
+    {
+      "id": "gal-2",
+      "title": "Christ Formed Foundation Support Gathering",
+      "category": "Foundation",
+      "imageUrl": "https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=800&q=80",
+      "createdAt": "2026-09-23T08:00:00.000Z"
+    }
+  ],
+  "prayers": [
+    {
+      "id": "pray-1",
+      "name": "Community Member",
+      "email": "member@example.com",
+      "request": "Praying for God's blessings upon the Christ Formed Foundation as we serve single mothers and elderly community members.",
+      "isPublic": true,
+      "status": "PRAYED",
+      "createdAt": "2026-09-23T08:00:00.000Z"
+    }
+  ],
+  "messages": [],
+  "donations": [],
+  "sponsors": []
+}
