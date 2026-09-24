@@ -266,18 +266,35 @@ const initialData: ChurchDbData = {
   sponsors: []
 };
 
-const DB_FILE = path.join(process.cwd(), 'church-data-store.json');
+const DB_FILE = process.env.VERCEL || process.env.NODE_ENV === 'production'
+  ? path.join('/tmp', 'church-data-store.json')
+  : path.join(process.cwd(), 'church-data-store.json');
+
+const INITIAL_DB_FILE = path.join(process.cwd(), 'church-data-store.json');
 
 export function readStore(): ChurchDbData {
   try {
     if (!fs.existsSync(DB_FILE)) {
-      fs.writeFileSync(DB_FILE, JSON.stringify(initialData, null, 2), 'utf-8');
-      return initialData;
+      let seed = initialData;
+      if (fs.existsSync(INITIAL_DB_FILE)) {
+        try {
+          const content = fs.readFileSync(INITIAL_DB_FILE, 'utf-8');
+          seed = JSON.parse(content);
+        } catch (e) {
+          seed = initialData;
+        }
+      }
+      try {
+        fs.writeFileSync(DB_FILE, JSON.stringify(seed, null, 2), 'utf-8');
+      } catch (e) {
+        // Fallback to in-memory if disk write is disabled
+      }
+      return seed;
     }
     const content = fs.readFileSync(DB_FILE, 'utf-8');
     return JSON.parse(content);
   } catch (err) {
-    console.error('Error reading JSON store:', err);
+    console.error('Error reading store:', err);
     return initialData;
   }
 }
@@ -286,6 +303,6 @@ export function writeStore(data: ChurchDbData) {
   try {
     fs.writeFileSync(DB_FILE, JSON.stringify(data, null, 2), 'utf-8');
   } catch (err) {
-    console.error('Error writing JSON store:', err);
+    console.error('Error writing store:', err);
   }
 }
