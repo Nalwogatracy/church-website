@@ -1,7 +1,13 @@
+import type { Metadata } from 'next';
 import React from 'react';
 import EventCard from '@/components/EventCard';
 import { readStore } from '@/lib/store';
 import { Calendar } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'Church Events & Gathering Schedule | Kibiri, Munyonyo',
+  description: 'Join Sunday worship services, midweek prayer altars, and community outreach events at Christ Formed Church International in Kibiri, Kampala.',
+};
 
 export const revalidate = 0;
 

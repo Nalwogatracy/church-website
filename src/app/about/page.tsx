@@ -1,7 +1,13 @@
+import type { Metadata } from 'next';
 import React from 'react';
 import PastorCard from '@/components/PastorCard';
 import { readStore } from '@/lib/store';
 import { ShieldCheck, Heart, Compass, HeartHandshake, MapPin, Sparkles } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'Our History & Leadership | Pastor Duncan Kirya',
+  description: 'Learn about the history of Christ Formed Church International, founded on 23rd March 2019 by Pastor Duncan Kirya in Kibiri, Munyonyo, Kampala. Discover our vision, leadership team, and Christ Formed Foundation.',
+};
 
 export const revalidate = 0;
 

@@ -1,7 +1,13 @@
+import type { Metadata } from 'next';
 import React from 'react';
 import SermonCard from '@/components/SermonCard';
 import { readStore } from '@/lib/store';
 import { Video } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'Sermons & Video Messages | Pastor Duncan Kirya',
+  description: 'Watch video sermons, teachings, and altar worship recordings from Pastor Duncan Kirya and Pastor Valence at Christ Formed Church International in Kibiri, Munyonyo, Kampala.',
+};
 
 export const revalidate = 0;
 
