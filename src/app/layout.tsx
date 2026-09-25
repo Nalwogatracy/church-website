@@ -3,7 +3,7 @@ import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://christformedchurch.org';
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://church-website-egie.vercel.app';
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),

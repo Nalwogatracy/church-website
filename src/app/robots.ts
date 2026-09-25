@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://christformedchurch.org';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://church-website-egie.vercel.app';
 
   return {
     rules: [
